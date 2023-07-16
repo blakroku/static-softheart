@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* custom fonts */
+@font-face {
+	font-family: GilroyBold;
+	font-weight: bolder;
+	src: url('fonts/Gilroy-ExtraBold.otf') format("opentype");
+}
+
+@font-face {
+	font-family: Gilroy-Light;
+	font-weight: normal;
+	src: url('fonts/Gilroy-Light.otf') format("opentype");
+}
+
+body {
+	font-family: 'Hanken Grotesk', sans-serif;
+	font-weight: 200px !important;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 23px;
+}
+
+.bg-hero {
+	background-image: url("../img/bg-4.jpeg");
+	background-repeat: no-repeat;
+	background-position-x: 0%;
+	/* opacity: 90%; */
+}
+
+/* big header */
+.main-header-type {
+	font-family: 'GilroyBold', sans-serif;
+}
+
+.header-top-level {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.header-med-level {
+    font-size: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 55px;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tano Biakoye Organic Cocoa Farms | Who we are</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/faed9fcd65.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+<body>
+<header class="bg-hero">
+    <nav x-data="{open: false}" class="py-4 text-white px-8 md:px-0 font-bold text-md">
+        <section class="container mx-auto flex items-center justify-between">
+            <div>
+                <a href="index.html">
+                    <img class="w-16 md:w-32" src="./img/logo.png" alt="" srcset="">
+                </a>
+            </div>
+            <div class="space-x-4 hidden md:block">
+                <span><a class="hover:text-gray-700" href="/">Home</a></span>
+                <span><a class="hover:text-gray-700" href="who-we-are.html">Who we are</a></span>
+                <span><a class="hover:text-gray-700" href="what-we-do.html">What we do</a></span>
+                <span><a class="hover:text-gray-700" href="contact-us.html">Contact Us</a></span>
+                <!--                <span><a class="hover:text-gray-700" href="contact-us.html">Innovations</a></span>-->
+                <!--                <span><a class="hover:text-gray-700" href="contact-us.html">Resources</a></span>-->
+                <span>
+							<a class="hover:text-gray-700" href="">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</a>
+						</span>
+            </div>
+            <div class="font-black text-xl md:hidden">
+                <!-- <i class="fa-solid fa-bars"></i> -->
+                <a @click.prevent="open = true" class="space-y-1 text-gray-300 shadow-lg" href="">
+                    <span class="block h-1 w-8 bg-green-800 rounded-lg"></span>
+                    <span class="block h-1 w-6 bg-green-800 rounded-lg"></span>
+                    <span class="block h-1 w-4 bg-green-800 rounded-lg"></span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Mobile navaigation -->
+        <section class="block md:hidden mt-2 text-center">
+            <div x-show="open" @click.away="open = false" x-transition.duration.400>
+                <span><a class="block hover:text-gray-700 mb-2" href="who-we-are.html">Who we are</a></span>
+                <span><a class="block hover:text-gray-700 mb-2" href="what-we-do.html">What we do</a></span>
+                <span><a class="block hover:text-gray-700 mb-2" href="contact-us.html">Contact Us</a></span>
+<!--                <span><a class="block hover:text-gray-700 mb-2" href="contact-us.html">Innovations</a></span>-->
+<!--                <span><a class="block hover:text-gray-700 mb-2" href="contact-us.html">Resources</a></span>-->
+                <span><a class="block hover:text-gray-700" href="#"><i
+                        class="fa-solid fa-magnifying-glass"></i></a></span>
+            </div>
+        </section>
+    </nav>
+
+    <section class="py-32 sm:py-32 md:py-32 text-white text-center px-8 sm:px-0 md:px-0">
+        <h1 class="inline-block text-7xl px-2 main-header-type text-green-800 items-center" style="font-weight: 700;">
+            Who we are
+        </h1>
+    </section>
+</header>
+
+
+<main class="mx-auto py-20 px-8 sm:px-0 md:px-0 sm:flex md:flex justify-between" style="max-width: 970px;">
+    <section>
+
+       <div class="md:mx-auto mb-24 px-8">
+          <div class="md:flex md:space-x-12">
+
+            <div class="rounded-md mb-4 cursor-pointer hover:shadow-lg transition ease-in-out duration-300">
+                <img class="rounded-md border-8 border-yellow-100 hover:border-yellow-200" src="./img//gallery/3.jpeg" alt="">
+            </div>
+
+            <div class="rounded-md right-0 cursor-pointer">
+                <img class="rounded-md border-8 border-yellow-100 hover:border-yellow-200" src="./img//gallery/1.jpeg" alt="">
+            </div>
+
+            <div class="md:w-56 rounded-md mb-4 mt-4 md:mt-0 cursor-pointer">
+                <img class="rounded-md border-4 border-yellow-100 hover:border-yellow-200" src="./img//gallery/4.jpeg" alt="">
+            </div>
+          </div>
+       </div>
+
+        <div>
+            <p class="mb-6 font-bold text-xl">
+                Tano Biakoye Organic Cocoa is located in the Atsima Mponua district, Ashanti Region of Ghana. Our company have been organic certified by the Control Union Certification (Gh) since 2012, topped with Rainforest Alliance certification since 2010.
+            </p>
+            <p class="mb-6">
+                Tano Biakoye Organic Cocoa has progressively increased to over 1,000 smallholder farmers producing more than 800 MT of organic-Rainforest Alliance cocoa beans annually.
+            </p>
+           <div class="md:flex md:justify-between md:space-x-12 my-20">
+                <div class="w-full md:w-80 mb-8 md:mb-0 tracking-wide rounded-md p-8 shadow-md bg-green-500 text-white relative">
+                    <h1 class="header-med-level text-xl font-bolder mb-6">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </span>
+                        Our Vision
+                    </h1>
+                    <span>
+                        Leading the sustainable development of Ghana organic cocoa farming indusstry through a holistic approach that is aware of economic sociatal and environmental consideration employing natural and proper organic method of farming for better quality and improved productivity
+                    </span>
+                    <span class="absolute top-0 right-0 mr-4 mt-4 text-4xl text-green-100">
+                        <i class="fa-solid fa-lemon"></i>
+                    </span>
+                </div>
+                <div class="w-full md:w-80 mb-8 md:mb-0 tracking-wide rounded-md p-8 shadow-md bg-green-700 text-white relative">
+                    <h1 class="header-med-level text-xl font-bolder mb-6">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605" />
+                            </svg>                              
+                        </span>
+                        Mission
+                    </h1>
+                    <span>
+                        To facilitate the development of Ghana organic cocoa farming industry across the value chain using practical, teamwork, focused and well cordinated strategies involving the key stakeholders in an effort to ensure that they are continually satisfied
+                    </span>
+                    <span class="absolute top-0 right-0 mr-4 mt-4 text-4xl text-green-100">
+                        <i class="fa-solid fa-lemon"></i>
+                    </span>
+                </div>
+                <div class="w-full md:w-80 mb-8 md:mb-0 tracking-wide rounded-md p-8 shadow-md bg-green-900 text-white relative">
+                    <h1 class="header-med-level text-xl font-bolder mb-6">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline-block">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                            </svg>                              
+                        </span>
+                        Goals
+                    </h1>
+                    <span>
+                        Cooperatively produce and market organic cocoa produced exclusively by our noble energetic farmers of the cooperatives
+                    </span>
+                    <span class="absolute top-0 right-0 mr-4 mt-4 text-4xl text-green-100">
+                        <i class="fa-solid fa-lemon"></i>
+                    </span>
+                </div>
+           </div>
+        </div>
+    </section>
+</main>
+
+<section class="text-center py-12 bg-green-900 text-white shadow-lg">
+    <div class="mb-4 text-xl">We are social <span><i class="fa-solid fa-arrow-right"></i></span></div>
+    <div class="text-5xl space-x-4">
+        <span><a href="https://facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></span>
+        <span><a href="https://twitter.com/" target="_blank"><i class="fa-brands fa-twitter"></i></a></span>
+        <span><a href="https://instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></span>
+    </div>
+</section>
+
+<footer class="bg-green-800 text-white py-12 px-8">
+
+    <div class="">
+        <a href="who-we-are.html">
+            <img class="w-16 md:w-32 mx-auto" src="./img/logo.png" alt="" srcset="">
+        </a>
+    </div>
+
+    <div class="md:flex justify-between mx-auto mt-12" style="max-width: 970px">
+        <div class="mb-8">
+            <h1 class="font-black text-xl mb-3">Quick Links</h1>
+            <div class="">
+                <span class="block mb-1"><a href="who-we-are.html">Who we are</a></span>
+                <span class="block mb-1"><a href="what-we-do.html">What we do</a></span>
+                <!-- <span class="block mb-1"><a href="">Our blog</a></span> -->
+                <span class="block mb-1"><a href="">Careers</a></span>
+                <span class="block mb-1"><a href="contact-us.html">Contact us</a></span>
+            </div>
+        </div>
+        <div class="mb-8">
+            <h1 class="font-semibold text-xl mb-3">Location</h1>
+            <div class="">
+                <span class="block mb-1"><a href="contact-us.html">Our Farm</a></span>
+                <span class="block mb-1"><a href="contact-us.html">Map Locator</a></span>
+            </div>
+        </div>
+        <div class="mb-8">
+            <h1 class="font-semibold text-xl mb-3">Newsletter</h1>
+            <div>
+                Subscribe to our newsletter to get latest news and offers
+            </div>
+            <div class="mt-3">
+                <form action="#" method="post">
+                    <div class="inline-block m-0">
+                        <input class="py-3 px-2 text-gray-500 block rounded-l-lg" type="text" name="email"
+                               id="email" placeholder="Enter email address" style="max-width: 400px;">
+                    </div>
+                    <div class="inline-block m-0">
+                        <button type="submit" class="bg-green-900 text-white px-4 py-3 font-bold rounded-r-lg">
+									<span class="mr-2"><i
+                                            class="fa-sharp fa-solid fa-envelope"></i></span>Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="mx-auto text-sm mt-12" style="max-width: 600px;">
+        <span class="block text-center">Copyright &copy; 2022 Tano Biakoye Organic Cocoa. All rights
+            reserved
+        </span>
+        <span class="block text-center mt-2">Made with love 
+        <span class="text-pink-400">
+            <i class="fa-solid fa-heart"></i>
+        </span> 
+            by 
+            <a class="font-bold hover:text-red-900" target="_blank" href="https://wuvatec.com">
+                WuvaTM Technologies
+            </a>
+        </span>
+    </div>
+</footer>
+</body>
+</html>

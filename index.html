@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Softheart Elderly Care Foundation Ghana</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://kit.fontawesome.com/faed9fcd65.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="./css/style.css">
+		<script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+	</head>
+	<body>
+		<header class="bg-hero">
+			<nav x-data="{open: false}" class="py-4 bg-blue-900 text-white px-8 md:px-0 font-bold text-md">
+				<section class="px-8 flex items-center justify-between">
+					<div>
+						<a href="index.html">
+							<img class="w-10 md:w-32" src="./img/logo.jpg" alt="" srcset="">
+						</a>
+					</div>
+					<div class="space-x-4 hidden md:block">
+						<span><a class="hover:text-gray-700" href="/">Home</a></span>
+						<span><a class="hover:text-gray-700" href="who-we-are.html">Who we are</a></span>
+						<span><a class="hover:text-gray-700" href="what-we-do.html">What we do</a></span>
+						<span><a class="hover:text-gray-700" href="contact-us.html">Contact Us</a></span>
+						<span><a class="hover:text-gray-700" href="what-we-do.html">Donate</a></span>
+						<!--                <span><a class="hover:text-gray-700" href="contact-us.html">Innovations</a></span>-->
+						<!--                <span><a class="hover:text-gray-700" href="contact-us.html">Resources</a></span>-->
+						<span>
+									<a class="hover:text-gray-700" href="">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</a>
+								</span>
+					</div>
+					<div class="font-black text-xl md:hidden">
+						<!-- <i class="fa-solid fa-bars"></i> -->
+						<a @click.prevent="open = true" class="space-y-1 text-gray-300 shadow-lg" href="">
+							<span class="block h-1 w-8 bg-white rounded-lg"></span>
+							<span class="block h-1 w-6 bg-white rounded-lg"></span>
+							<span class="block h-1 w-4 bg-white rounded-lg"></span>
+						</a>
+					</div>
+				</section>
+		
+				<!-- Mobile navaigation -->
+				<section class="block md:hidden mt-2 text-center">
+					<div x-show="open" @click.away="open = false" x-transition.duration.400>
+						<span><a class="block hover:text-white-700 mb-2" href="who-we-are.html">Who we are</a></span>
+						<span><a class="block hover:text-white-700 mb-2" href="what-we-do.html">What we do</a></span>
+						<span><a class="block hover:text-white-700 mb-2" href="contact-us.html">Contact Us</a></span>
+						<span><a class="hover:text-gray-700" href="what-we-do.html">Donate</a></span>
+		<!--                <span><a class="block hover:text-gray-700 mb-2" href="contact-us.html">Innovations</a></span>-->
+		<!--                <span><a class="block hover:text-gray-700 mb-2" href="contact-us.html">Resources</a></span>-->
+						<span><a class="block hover:text-gray-700 mt-8" href="#"><i
+								class="fa-solid fa-magnifying-glass"></i></a></span>
+					</div>
+				</section>
+			</nav>
+		</header>
+		
+		 <section class="hero mb-20 py-28 bg-black text-white bg-gradient-to-r from-pink-800 to-pink-300">
+        <div class="px-8">
+          <aside class="left">
+            <h1 class="main-header-type hero-heading text-6xl font-bold mb-6 break-keep">Empowering the Lives of Seniors with Care</h1>
+            <p class="hero-content">
+              Providing quality support and a nurturing environment for elderly individuals, ensuring their
+              well-being and happiness through personalized attention, engaging activities, and a strong community
+              of companionship.
+            </p>
+          </aside>
+          <aside class="right hero-image mt-14">
+            <img class="rounded-lg border-white border-2" src="img/bg-image.jpg" alt="Hero Image" />
+          </aside>
+        </div>
+      </section>
+
+      <section class="about-us px-8 mb-20 py-20">
+        <h1 class="text-5xl font-semibold mb-8">What we do?</h1>
+        <span class="block mb-6">
+          <span class='font-semibold'>Softheart Elderly Care Foundation:</span> Providing compassionate care, enhancing quality of life, and
+          fostering
+          a supportive community. Achievements include remarkable transformations, life long friendships, and
+          peace of
+          mind through safety measures. Personalized care plans, health and wellness services, and emotional
+          support
+          promote independence and well-being. Making a positive impact in elderly lives.
+        </span>
+        <span class="block mt-14">
+            <a class="bg-red-600 px-6 py-3 shadow rounded-xl text-white font-semibold" href="">Learn more</a>
+        </span>
+      </section>
+
+      <section class="extra-message">
+        <aside class="right">
+          <img src="img/bg-image.jpg" alt="Extra Content Image" class="extra-content-image" />
+        </aside>
+        <aside class="left px-8 py-32">
+          <h1 class="extra-content-header">Our organization fosters a culture of respect, empathy, and
+            compassion towards elderly individuals.</h1>
+          <p>We firmly believe that by nurturing a culture rooted in respect, empathy, and compassion, we not only
+            enhance the lives of the seniors we serve but also inspire others to embrace these values. Our
+            organization serves as a beacon of hope and sets an example for how society can come together to
+            care for and uplift elderly individuals, ensuring they live their later years with dignity, comfort,
+            and happiness.</p>
+        </aside>
+      </section>
+
+      <section class="join-us bg-blue-600 text-white py-32 px-8">
+        <aside class="left">
+          <h1>Are you passionate about improving the lives of seniors? Join Softheart Elderly Care Foundation in
+            our mission to provide compassionate care and support to elderly individuals.</h1>
+        </aside>
+        <aside class="right mt-12">
+          <a href="" class="call-to-action:support-us bg-white text-blue-700 px-6 py-4 rounded-xl font-semibold">
+            <span class="mr-2"><FiHeart class="inline-block" /></span>
+            <span>I want to make a difference</span>
+          </a>
+        </aside>
+      </section>
+		
+		<footer class="bg-green-800 text-white py-12 px-8">
+		
+			<div class="">
+				<a href="who-we-are.html">
+					<img class="w-16 md:w-32 mx-auto" src="./img/logo.jpg" alt="" srcset="">
+				</a>
+			</div>
+		
+			<div class="md:flex justify-between mx-auto mt-12" style="max-width: 970px">
+				<div class="mb-8">
+					<h1 class="font-black text-xl mb-3">Softheart</h1>
+					<div class="">
+						<span class="block mb-1"><a href="who-we-are.html">Who we are</a></span>
+						<span class="block mb-1"><a href="what-we-do.html">What we do</a></span>
+						<!-- <span class="block mb-1"><a href="">Our blog</a></span> -->
+						<span class="block mb-1"><a href="">Careers</a></span>
+						<span class="block mb-1"><a href="contact-us.html">Contact us</a></span>
+					</div>
+				</div>
+				<div class="mb-8">
+					<h1 class="font-semibold text-xl mb-3">Support</h1>
+					<div class="">
+						<span class="block mb-1"><a href="contact-us.html">Contact us</a></span>
+						<span class="block mb-1"><a href="contact-us.html">Donate</a></span>
+					</div>
+				</div>
+				<div class="mb-8">
+					<h1 class="font-semibold text-xl mb-3">Join our newsletter</h1>
+					<div>
+						Subscribe to our newsletter to get latest news and updates
+					</div>
+					<div class="mt-3">
+						<form action="#" method="post">
+							<div class="inline-block m-0">
+								<input class="py-3 px-2 text-gray-500 block rounded-l-lg" type="text" name="email"
+									   id="email" placeholder="Enter email address" style="max-width: 400px;">
+							</div>
+							<div class="inline-block m-0">
+								<button type="submit" class="bg-green-900 text-white px-4 py-3 font-bold rounded-r-lg">
+											<span class="mr-2"><i
+													class="fa-sharp fa-solid fa-envelope"></i></span>Subscribe</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="mx-auto text-sm mt-12" style="max-width: 600px;">
+				<span class="block text-center">Copyright &copy; 2023 Softheart Elderly Care Foundation. All rights
+					reserved
+				</span>
+				<span class="block text-center mt-2">Made with love 
+				<span class="text-pink-400">
+					<i class="fa-solid fa-heart"></i>
+				</span> 
+					by 
+					<a class="font-bold hover:text-red-900" target="_blank" href="https://wuvatec.com">
+						WuvaTM Technologies
+					</a>
+				</span>
+			</div>
+		</footer>
+	</body>
+</html>
