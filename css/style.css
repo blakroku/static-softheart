@@ -48,3 +48,10 @@ body {
     font-weight: 700;
     line-height: 55px;
 }
+
+.btn-action {
+	font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    line-height: 55px;
+}
