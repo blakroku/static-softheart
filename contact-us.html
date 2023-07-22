@@ -11,8 +11,8 @@
 	</head>
 	<body>
 		<header class="bg-hero">
-			<nav x-data="{open: false}" class="py-2 bg-blue-900 text-white font-bold text-md">
-				<section class="flex items-center justify-between px-8 md:px-0">
+			<nav x-data="{open: false}" class="px-8 py-2 bg-gray-100 text-gray-500 font-bold text-md md:py-4">
+				<section class="md:container md:mx-auto btn-action flex items-center justify-between md:px-0">
 					<div>
 						<a href="index.html">
 							<img class="w-10 md:w-32 rounded-full" src="./img/logo.jpg" alt="" srcset="">
@@ -23,7 +23,7 @@
 						<span><a class="hover:text-gray-700" href="who-we-are.html">Who we are</a></span>
 						<span><a class="hover:text-gray-700" href="what-we-do.html">What we do</a></span>
 						<span><a class="hover:text-gray-700" href="contact-us.html">Contact Us</a></span>
-						<span><a class="hover:text-gray-700" href="donate.html">Donate</a></span>
+						<span><a class="hover:text-gray-700 bg-yellow-500 text-white py-2 px-3 rounded-md hover:bg-yellow-400" href="donate.html">Donate</a></span>
 						<!--                <span><a class="hover:text-gray-700" href="contact-us.html">Innovations</a></span>-->
 						<!--                <span><a class="hover:text-gray-700" href="contact-us.html">Resources</a></span>-->
 						<span>
@@ -34,22 +34,22 @@
 					</div>
 					<div class="font-black text-xl md:hidden">
 						<!-- <i class="fa-solid fa-bars"></i> -->
-						<a @click.prevent="open = true" class="space-y-1 text-gray-300 shadow-lg" href="">
-							<span class="block h-1 w-8 bg-white rounded-lg"></span>
-							<span class="block h-1 w-6 bg-white rounded-lg"></span>
-							<span class="block h-1 w-4 bg-white rounded-lg"></span>
+						<a @click.prevent="open = true" class="space-y-1 text-gray-500 shadow-lg hover:text-gray-800" href="">
+							<span class="block h-1 w-8 bg-gray-500 rounded-lg"></span>
+							<span class="block h-1 w-6 bg-gray-500 rounded-lg"></span>
+							<span class="block h-1 w-4 bg-gray-500 rounded-lg"></span>
 						</a>
 					</div>
 				</section>
 		
-				<!-- Mobile navaigation -->
-				<section class="block md:hidden mt-2 text-censter">
+				<!-- Mobile navigation -->
+				<section class="block md:hidden mt-2">
 					<div class="" x-show="open" @click.away="open = false" x-transition.duration.400>
-						<span><a class="border-y border-blue-700 block hover:text-white px-8 py-2 hover:bg-blue-800" href="/">Home</a></span>
-						<span><a class="border-b border-blue-700 block hover:text-white px-8 py-2 hover:bg-blue-800" href="who-we-are.html">Who we are</a></span>
-						<span><a class="border-b border-blue-700 block hover:text-white px-8 py-2 hover:bg-blue-800" href="what-we-do.html">What we do</a></span>
-						<span><a class="border-b border-blue-700 block hover:text-white px-8 py-2 hover:bg-blue-800" href="contact-us.html">Contact Us</a></span>
-						<span><a class="border-b border-blue-700 block hover:text-white px-8 py-2 hover:bg-blue-800" href="donate.html">Donate</a></span>
+						<span><a class="block hover:text-white px-8 py-2 rounded-md hover:bg-gray-500" href="/">Home</a></span>
+						<span><a class="block hover:text-white px-8 py-2 rounded-md hover:bg-gray-500" href="who-we-are.html">Who we are</a></span>
+						<span><a class="block hover:text-white px-8 py-2 rounded-md hover:bg-gray-500" href="what-we-do.html">What we do</a></span>
+						<span><a class="block hover:text-white px-8 py-2 rounded-md hover:bg-gray-500" href="contact-us.html">Contact Us</a></span>
+						<span><a class="block hover:text-white px-8 py-2 rounded-md hover:bg-gray-500" href="donate.html">Donate</a></span>
 						
 						<span>
 							<a class="block hover:text-white my-8 px-8 py-2" href="#">
@@ -61,12 +61,16 @@
 			</nav>
 		</header>
 
+		
+		<div class="px-8 py-14 mb-14 pb-8 sm:text-center md:text-center border-b">
+			<h1 class="main-header-type text-6xl md:text-5xl">
+				<span class="text-blue-100 inline-block rotate-12"><i class="fa-regular fa-comments"></i></span>
+				<span style="color: #1E4293">Contact Us</span>
+			</h1>
+	   </div>
 
-		<main class="mx-auto py-20 px-8 sm:px-0 md:px-0 sm:flex md:flex justify-between" style="max-width: 970px;">
+		<main class="mx-auto pb-20 px-8 sm:px-0 md:px-0 sm:flex md:flex justify-between" style="max-width: 970px;">
 			<section class="">
-				<div class="mb-6">
-					<h1 class="main-header-type text-5xl">Contact us</h1>
-			   </div>
 				<div>
 					<h1 class="uppercase tracking-widest font-bold mt-6 mb-1">
 						<span>
