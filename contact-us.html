@@ -119,7 +119,7 @@
 
 			<section class="mt-14 sm:mt-0 md:mt-0 sm:w-1/2 md:w-1/2">
 				<h1>Contact form</h1>
-				<form netlify method="post">
+				<form method="post"  data-netlify-recaptcha="true" data-netlify="true">
 					<div>
 						<select class="bg-gray-100 block mb-5 px-5 py-4 w-full rounded-md border border-gray-200"
 							name="">
@@ -154,6 +154,10 @@
 					<div>
 						<textarea class="bg-gray-100 block mb-5 px-5 py-4 w-full rounded-md border border-gray-200"
 							name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+					</div>
+					<div>
+						<div data-netlify-recaptcha="true"></div>
+
 					</div>
 					<div>
 						<button
